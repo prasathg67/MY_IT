@@ -2755,6 +2755,7 @@ a.meanmenu-reveal {
   font-weight: 700;
   line-height: 94px;
   position: relative;
+  color: #fff;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .banner__main__title {
@@ -2787,9 +2788,10 @@ a.meanmenu-reveal {
 
 .banner__description {
   font-family: "Kumbh Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   line-height: 34px;
+  color: #7fe5e5;
 }
 @media only screen and (max-width: 575.98px) {
   .banner__description {
@@ -2872,22 +2874,27 @@ a.meanmenu-reveal {
 }
 
 .theme__main__banner {
-  background: url(../img/hero/hero__one__bg__01.png) no-repeat, #e5f0fd;
+  /* background: url(../img/hero/hero__one__bg__01.png) no-repeat, #e5f0fd;
   background-size: cover;
-  background-position: center center;
+  background-position: center center; */
+  background: #F0F2F0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
   .theme__main__banner {
     background: none;
   }
-}
+} */
 .theme__main__banner .banner__description {
-  font-size: 18px;
+  font-size: 23px;
 }
 .theme__main__banner .shape__01 {
   position: absolute;
-  left: 52%;
-  top: 220px;
+  left: 50%;
+  bottom: 170px;
+  /* top: 220px; */
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
@@ -2913,7 +2920,7 @@ a.meanmenu-reveal {
 }
 .theme__main__banner .shape__03 {
   position: absolute;
-  right: 13%;
+  right: 32%;
   top: 6%;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -4453,6 +4460,7 @@ input.main-search-input::-o-placeholder {
 
 .offer__section {
   position: relative;
+  background-color: #faf0f1;
 }
 .offer__section .section__sub__title {
   position: relative;
@@ -7085,9 +7093,13 @@ p {
 }
 
 .choose__section {
-  background: url(../img/chose/choose__bg__01.png) no-repeat;
+  /* background: url(../img/chose/choose__bg__01.png) no-repeat;
   background-size: auto;
-  background-position: 34% 36%;
+  background-position: 34% 36%; */
+  background: #FFEFBA;
+  background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+  background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+
 }
 @media only screen and (max-width: 1200px) {
   .choose__section {
@@ -8760,3 +8772,26 @@ p {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/* my css */
+.pricing_section .ht_btn{
+  border: none;
+  overflow: hidden;
+  color: white;
+  background: #357ffe;
+  font-size: 16px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 500;
+  line-height: 16px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  transition: all;
+  z-index: 3;
+  padding: 15px 20px;
+  border-radius: 2px;
+
+}
+.pricing_section .row{
+  background-color: #111a30;
+}
