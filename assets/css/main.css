@@ -8794,4 +8794,19 @@ p {
 }
 .pricing_section .row{
   background-color: #111a30;
+  border-radius: 20px;
+
+}
+.pricing_section .program{
+  background-color: #000C40;
+  border-radius: 20px;
+}
+.pricing_section .pre-btn{
+  text-align: center;
+}
+
+@media(max-width:575px){
+  .pricing_section .ht_btn{
+    padding: 15px 14px;
+  }
 }
