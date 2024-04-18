@@ -1338,8 +1338,9 @@ a.meanmenu-reveal {
   width: 350px;
   padding: 25px 30px;
   height: 100%;
+  /* color: #000; */
   display: block;
-  background-color: #01050c;
+  background-color: #000;
   z-index: 1900;
   -webkit-transition: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -moz-transition: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -2750,12 +2751,12 @@ a.meanmenu-reveal {
   color: #fc3c59;
 }
 
-.banner__main__title {
+.theme__main__banner .banner__main__title {
   font-size: 85px;
   font-weight: 700;
   line-height: 94px;
   position: relative;
-  color: #fff;
+  color: #000;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .banner__main__title {
@@ -2775,7 +2776,7 @@ a.meanmenu-reveal {
   }
 }
 
-.banner__sub__title {
+.theme__main__banner .banner__sub__title {
   font-size: 20px;
   font-weight: 500;
   line-height: 80px;
@@ -2791,7 +2792,7 @@ a.meanmenu-reveal {
   font-weight: 500;
   font-size: 20px;
   line-height: 34px;
-  color: #7fe5e5;
+  color: #000;
 }
 @media only screen and (max-width: 575.98px) {
   .banner__description {
@@ -2877,11 +2878,7 @@ a.meanmenu-reveal {
   top: 0px;
 }
 .theme__main__banner {
-  background-size: cover;
-  background: #F0F2F0;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background-color: #fff5f5;
 }
 /* @media only screen and (max-width: 1200px) {
   .theme__main__banner {
@@ -2914,11 +2911,11 @@ a.meanmenu-reveal {
   top: 137px;
   z-index: -1;
 }
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
   .theme__main__banner .shape__02 {
     display: none;
   }
-}
+} */
 .theme__main__banner .shape__03 {
   position: absolute;
   right: 32%;
@@ -3087,12 +3084,8 @@ a.meanmenu-reveal {
   position: relative;
   left: -17px;
 }
-.theme__two__banner .banner__main__title {
-  color: white;
-}
-.theme__two__banner .banner__description {
-  color: white;
-}
+
+
 .theme__two__banner .ht_btn {
   border-radius: 3px;
   background: #fc3c59;
@@ -4462,7 +4455,7 @@ input.main-search-input::-o-placeholder {
 .offer__section {
   position: relative;
   /* background-image: url("/assets/img/bg/offer_bg__02.png"); */
-  background-color: #f8f7f7;
+  background-color: #fff5f5;
 }
 .offer__section .section__sub__title {
   position: relative;
@@ -7098,19 +7091,19 @@ p {
 }
 
 .choose__section {
-  /* background: url(../img/chose/choose__bg__01.png) no-repeat;
+  background: url(../img/chose/choose__bg__01.png) no-repeat;
   background-size: auto;
-  background-position: 34% 36%; */
-  background: #FFEFBA;
+  background-position: 34% 36%;
+  /* background: #FFEFBA;
   background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
-  background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+  background: linear-gradient(to right, #FFFFFF, #FFEFBA); */
 
 }
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
   .choose__section {
     background: none;
   }
-}
+} */
 .choose__section .choose__main__1 {
   position: relative;
   right: 4rem;
@@ -8867,10 +8860,14 @@ p {
   border-radius: 3px;
   border: none;
 }
+.offer__section .post h2{
+  color: #357ffe;
+
+}
 .offer__section .post{
   background-image: url("../img/bg/offer_bg__01.png");
   background-color: #fff;
-  background-position: center;
+  background-position: left center;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20px;
@@ -8878,11 +8875,11 @@ p {
   box-shadow: 5px 10px 5px #eeeeee8c;
 }
 .offer__section .post:hover{
-  border: 2px solid #357ffe;
+  border: 2px solid #fc3c59;
   transition: 0.5s;
 }
 .offer__section .post:hover h2{
-  color: #357ffe;
+  color: #fc3c59;
   transition: 0.5s;
 }
 
@@ -8898,5 +8895,10 @@ p {
 @media(max-width:992px){
   .technology_section .course li{
     flex-basis: 50%;
+  }
+}
+@media(max-width:575px){
+  .theme__main__banner .banner__description {
+    font-size: 19px;
   }
 }
