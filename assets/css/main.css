@@ -2872,11 +2872,12 @@ a.meanmenu-reveal {
     line-height: 32px;
   }
 }
-
+.theme__main__banner .theme_bg_img{
+  position: absolute;
+  top: 0px;
+}
 .theme__main__banner {
-  /* background: url(../img/hero/hero__one__bg__01.png) no-repeat, #e5f0fd;
   background-size: cover;
-  background-position: center center; */
   background: #F0F2F0;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -4460,7 +4461,8 @@ input.main-search-input::-o-placeholder {
 
 .offer__section {
   position: relative;
-  background-color: #faf0f1;
+  /* background-image: url("/assets/img/bg/offer_bg__02.png"); */
+  background-color: #f8f7f7;
 }
 .offer__section .section__sub__title {
   position: relative;
@@ -4490,10 +4492,13 @@ input.main-search-input::-o-placeholder {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+.offer__section .single__offer__box{
+  overflow: hidden;
+}
 .offer__section .single__offer__box:hover {
   background: #F4E9EB;
   border: 1px solid black;
-  overflow: hidden;
+  overflow:visible;
 }
 @media only screen and (max-width: 1800px) {
   .offer__section .single__offer__box {
@@ -8805,8 +8810,93 @@ p {
   text-align: center;
 }
 
+.technology_section .section__sub__title{
+  position: relative;
+  color: #fc3c59;
+  display: inline;
+}
+.technology_section .section__sub__title::before {
+  position: absolute;
+  content: '';
+  width: 110%;
+  height: 25px;
+  border-top: 1px solid #E6E6E6;
+  border-left: 1px solid #E6E6E6;
+  top: -10px;
+  left: -6%;
+}
+.technology_section .course{
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #8080802b;
+  border-right: 1px solid #8080802b;
+  display: flex;
+  justify-content: center;
+}
+.technology_section .course li{
+  flex-basis: 25%;
+  padding: 20px;
+  border-width: 1px 0px 0px 1px;
+  border-style: solid;
+  border-color: #8080802b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* #check{
+  display: none;
+}
+.offer__section .content_more{
+  display: none;
+}
+#check1:checked ~ .content_more{
+  display: block;
+}
+#check:checked ~ label{
+  display: none;
+} */
+
+.offer__section .more{
+  display: none;
+}
+.offer__section button{
+  display: block;
+  background: #357ffe;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 3px;
+  border: none;
+}
+.offer__section .post{
+  background-image: url("../img/bg/offer_bg__01.png");
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  box-shadow: 5px 10px 5px #eeeeee8c;
+}
+.offer__section .post:hover{
+  border: 2px solid #357ffe;
+  transition: 0.5s;
+}
+.offer__section .post:hover h2{
+  color: #357ffe;
+  transition: 0.5s;
+}
+
+
 @media(max-width:575px){
   .pricing_section .ht_btn{
     padding: 15px 14px;
+  }
+  .technology_section .course{
+    display: block;
+  }
+}
+@media(max-width:992px){
+  .technology_section .course li{
+    flex-basis: 50%;
   }
 }
