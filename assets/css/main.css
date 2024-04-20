@@ -2752,9 +2752,9 @@ a.meanmenu-reveal {
 }
 
 .theme__main__banner .banner__main__title {
-  font-size: 85px;
+  font-size: 55px;
   font-weight: 700;
-  line-height: 94px;
+  /* line-height: 94px; */
   position: relative;
   color: #000;
 }
@@ -2769,10 +2769,14 @@ a.meanmenu-reveal {
     line-height: 70px;
   }
 }
-@media only screen and (max-width: 575.98px) {
-  .banner__main__title {
-    font-size: 40px;
+@media(max-width: 575px) {
+  .theme__main__banner .banner__main__title {
+    font-size: 35px;
     line-height: 50px;
+  }
+  .full_stack_section h2{
+    font-size: 25px;
+
   }
 }
 
@@ -2886,12 +2890,12 @@ a.meanmenu-reveal {
   }
 } */
 .theme__main__banner .banner__description {
-  font-size: 23px;
+  font-size: 18px;
 }
 .theme__main__banner .shape__01 {
   position: absolute;
-  left: 50%;
-  bottom: 170px;
+  left: 46%;
+  bottom: 0px;
   /* top: 220px; */
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -8882,8 +8886,30 @@ p {
   color: #fc3c59;
   transition: 0.5s;
 }
-
-
+.theme__main__banner .ratings i{
+  color: gold;
+}
+.full_stack_section{
+  background-color: #fffafa;
+}
+.full_stack_section .live img{
+  width: 10%;
+}
+.full_stack_section .live .certificate{
+  background-color: #e7dcfc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  border-radius: 20px;
+}
+.full_stack_section .context{
+  margin-left: 16.66666667%;
+}
+.full_stack_section ul{
+  display: flex;
+  justify-content: center;
+}
 @media(max-width:575px){
   .pricing_section .ht_btn{
     padding: 15px 14px;
@@ -8896,9 +8922,12 @@ p {
   .technology_section .course li{
     flex-basis: 50%;
   }
+  .full_stack_section .context{
+    margin-left: auto;
+  }
 }
 @media(max-width:575px){
   .theme__main__banner .banner__description {
-    font-size: 19px;
+    font-size: 18px;
   }
 }
