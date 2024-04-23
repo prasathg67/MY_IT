@@ -245,19 +245,21 @@ label {
 }
 
 *::-moz-selection {
-  background: black;
+  background: rgb(174, 132, 132);
   color: white;
   text-shadow: none;
 }
 
 ::-moz-selection {
-  background: black;
+  /* background: black; */
+  background: rgb(174, 132, 132);
   color: white;
   text-shadow: none;
 }
 
 ::selection {
-  background: black;
+  background: rgb(174, 132, 132);
+  /* background: black; */
   color: white;
   text-shadow: none;
 }
@@ -2756,7 +2758,9 @@ a.meanmenu-reveal {
   font-weight: 700;
   /* line-height: 94px; */
   position: relative;
-  color: #000;
+  background: linear-gradient(to right,#357ffe,#BD081C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .banner__main__title {
@@ -2776,7 +2780,9 @@ a.meanmenu-reveal {
   }
   .full_stack_section h2{
     font-size: 25px;
-
+  }
+  .full_stack_section .text{
+    font-size: 13px;
   }
 }
 
@@ -2891,11 +2897,14 @@ a.meanmenu-reveal {
 } */
 .theme__main__banner .banner__description {
   font-size: 18px;
+  width: 90%;
+  text-align: justify;
 }
 .theme__main__banner .shape__01 {
   position: absolute;
   left: 46%;
   bottom: 0px;
+  width: 10%;
   /* top: 220px; */
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -4497,13 +4506,13 @@ input.main-search-input::-o-placeholder {
   border: 1px solid black;
   overflow:visible;
 }
-@media only screen and (max-width: 1800px) {
+/* @media only screen and (max-width: 1800px) {
   .offer__section .single__offer__box {
     width: 100%;
     margin-bottom: 30px;
   }
-}
-.offer__section .single__offer__box .icon {
+} */
+/* .offer__section .single__offer__box .icon {
   position: relative;
   width: 78px;
   height: 78px;
@@ -4940,7 +4949,7 @@ input.main-search-input::-o-placeholder {
   text-transform: capitalize;
   font-size: 15px;
   font-weight: 500;
-}
+} */
 
 .about__page__offer .mission__one h4 {
   font-size: 48px;
@@ -8825,33 +8834,21 @@ p {
 .technology_section .course{
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 1px solid #8080802b;
-  border-right: 1px solid #8080802b;
+  /* border-bottom: 1px solid #8080802b;
+  border-right: 1px solid #8080802b; */
   display: flex;
   justify-content: center;
 }
 .technology_section .course li{
-  flex-basis: 25%;
+  flex-basis: 16%;
   padding: 20px;
-  border-width: 1px 0px 0px 1px;
+  border-width: 1px;
   border-style: solid;
   border-color: #8080802b;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-/* #check{
-  display: none;
-}
-.offer__section .content_more{
-  display: none;
-}
-#check1:checked ~ .content_more{
-  display: block;
-}
-#check:checked ~ label{
-  display: none;
-} */
 
 .offer__section .more{
   display: none;
@@ -8869,7 +8866,6 @@ p {
 
 }
 .offer__section .post{
-  background-image: url("../img/bg/offer_bg__01.png");
   background-color: #fff;
   background-position: left center;
   background-size: cover;
@@ -8889,8 +8885,14 @@ p {
 .theme__main__banner .ratings i{
   color: gold;
 }
+
 .full_stack_section{
   background-color: #fffafa;
+}
+.full_stack_section .buttons .ht_btn{
+  background-color: #357ffe;
+  text-transform: capitalize;
+  border-radius: 3px;
 }
 .full_stack_section .live img{
   width: 10%;
@@ -8906,9 +8908,59 @@ p {
 .full_stack_section .context{
   margin-left: 16.66666667%;
 }
+.full_stack_section h2{
+  background: linear-gradient(to right, #357ffe, #BD081C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .full_stack_section ul{
   display: flex;
   justify-content: center;
+}
+.full_stack_section .companies{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.full_stack_section .companies li{
+  flex-basis: 14.28%;
+  padding: 10px;
+}
+.technology_section .course img{
+  border-radius: 50%;
+}
+.join_section{
+  background:linear-gradient(to right ,#357ffe,#BD081C);
+}
+
+.join_section .ht_btn{
+  background: #357ffe;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 3px;
+}
+.training_mood_section .ht_btn{
+  background-color: #357ffe;
+  border-radius: 3px;
+  border: none;
+  text-transform: capitalize;
+}
+.training_mood_section{
+  background-color: #fff5f5;
+}
+.training_mood_section .shadow{
+  box-shadow: 0px 6px 34px rgba(215, 216, 222, 0.41);
+  background-color: #fff;
+  border-radius: 10px;
+}
+.training_mood_section .shadow .content{
+  text-align: justify;
+}
+.training_mood_section .linear{
+  background: linear-gradient(to right, #357ffe, #BD081C);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 @media(max-width:575px){
   .pricing_section .ht_btn{
@@ -8920,14 +8972,29 @@ p {
 }
 @media(max-width:992px){
   .technology_section .course li{
-    flex-basis: 50%;
+    flex-basis: 33%;
   }
   .full_stack_section .context{
     margin-left: auto;
+  }
+  .full_stack_section .companies li{
+    flex-basis: 25%;
+  }
+  .theme__main__banner .banner__description {
+    width: 100%;
+  }
+  
+}
+@media(max-width:767px){
+  .full_stack_section .companies li{
+    flex-basis: 50%;
   }
 }
 @media(max-width:575px){
   .theme__main__banner .banner__description {
     font-size: 18px;
+  }
+  .training_mood_section h2{
+    font-size: 25px;
   }
 }
