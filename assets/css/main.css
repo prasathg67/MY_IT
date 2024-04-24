@@ -8962,12 +8962,73 @@ p {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+
+/* Accordion Styles */
+/* .offer__section .accordion {
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid #ECF0F1;
+} */
+
+/* Button Styles */
+.offer__section .accordion-btn {
+  background-color:  #2C3E50;
+  font-size: 1.5em;
+  color: #ECF0F1;
+  cursor: pointer;
+  padding: 1em;
+  width: 100%;
+  text-align: left;
+  border: none;
+  transition: 0.5s;
+}
+
+.offer__section .accordion-btn:after {
+  content: '+';
+  font-size: 1em;
+  color: #e01f32;
+  float: right;
+  margin-left: 5px;
+}
+
+/* Active and Hover Button Styles */
+.offer__section .accordion-btn.active,
+.accordion-btn:hover {
+  background-color: #3f5973;
+}
+
+.offer__section .accordion-btn.active:after {
+  content: "-";
+}
+
+/* Panel Styles */
+.offer__section .panel {
+  background-color: #ECF0F1;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  text-align: start;
+}
+.offer__section .panel li{
+  list-style: disclosure-closed;
+}
+/* Show Panel onclick */
+.offer__section .panel.show {
+  display: block;
+  opacity: 1;
+  max-height: 500px;
+}
+
 @media(max-width:575px){
   .pricing_section .ht_btn{
     padding: 15px 14px;
   }
   .technology_section .course{
     display: block;
+  }
+  .full_stack_section .my-it{
+    text-align: justify;
   }
 }
 @media(max-width:992px){
