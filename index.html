@@ -1484,9 +1484,7 @@
 								<div class="col-xl-5">
 									<div class="text-start">
 										<div class="copyright__text pb-30">
-											<p><a class="fw-bold"
-													href="https://themeforest.net/user/template_mr/portfolio">template_mr</a>
-												© 2024, All Rights Reserved</p>
+											<p>©<span id="copy_rights_year"></span>, All Rights Reserved</p>
 										</div>
 									</div>
 								</div>
@@ -1535,6 +1533,11 @@
 
 	<!--Custom JS here -->
 	<script src="assets/js/main.js"></script>
+	<script>
+		const copyYear = document.getElementById('copy_rights_year');
+		const currentYear = new Date();
+		copyYear.innerHTML = currentYear.getFullYear();
+	</script>
 	<script>
 		$(document).ready(function(){
 			$(".read_more").click(function(){
