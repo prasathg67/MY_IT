@@ -6249,7 +6249,7 @@ p {
 }
 
 .testimonial__section {
-  background: #E5F0FD;
+  background: #fff;
   z-index: 2;
 }
 .testimonial__section .testimonial__icon__wrapper {
@@ -6288,14 +6288,15 @@ p {
   background: white;
   padding: 40px 30px;
   border-radius: 10px;
-  border: 1px solid black;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  /* border: 1px solid black; */
 }
-.testimonial__section .testimonial__content::before {
+/* .testimonial__section .testimonial__content::before {
   position: absolute;
   content: url("../img/shape/testimonial__01.png");
   right: 30px;
   top: -32px;
-}
+} */
 .testimonial__section .quate__icon {
   width: 65px;
   height: 65px;
@@ -7556,6 +7557,7 @@ p {
 
 .service__section {
   background-size: cover;
+  background-color: #fff5f5;
 }
 .service__section .service__img__wrapper .service___box {
   width: 100%;
