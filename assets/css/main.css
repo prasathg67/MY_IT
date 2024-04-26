@@ -8372,14 +8372,14 @@ p {
 .footer-area .footer__contact ul li a {
   font-size: 20px;
 }
-.footer-area .location {
+/* .footer-area .location {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-}
-.footer-area .location p {
+} */
+/* .footer-area .location p {
   margin-left: 20px;
-}
+} */
 .footer-area .copyright__area .copyright__text a {
   color: black;
   -webkit-transition: all 0.3s ease 0s;
@@ -8834,8 +8834,6 @@ p {
 .technology_section .course{
   display: flex;
   flex-wrap: wrap;
-  /* border-bottom: 1px solid #8080802b;
-  border-right: 1px solid #8080802b; */
   display: flex;
   justify-content: center;
 }
@@ -8963,12 +8961,9 @@ p {
   -webkit-background-clip: text;
 }
 
-/* Accordion Styles */
-/* .offer__section .accordion {
-  width: 60%;
-  margin: 0 auto;
-  border: 1px solid #ECF0F1;
-} */
+.choose__section .section__description{
+  text-align: justify;
+}
 
 /* Button Styles */
 .offer__section .accordion-btn {
@@ -9017,9 +9012,29 @@ p {
 .offer__section .panel.show {
   display: block;
   opacity: 1;
-  max-height: 500px;
+  max-height: 100%;
 }
-
+.footer-area form{
+  display: flex;
+  flex-direction: column;
+}
+.footer-area form input{
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.footer-area form input::placeholder{
+  font-size: 15px;
+}
+.footer-area form input:hover{
+  border: 1px solid #357ffe;
+}
+.footer-area form button{
+  border-radius: 3px;
+  background: #357ffe;
+  color: white;
+  text-transform: capitalize;
+  border: none;
+}
 @media(max-width:575px){
   .pricing_section .ht_btn{
     padding: 15px 14px;
