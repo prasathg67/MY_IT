@@ -245,21 +245,7 @@ label {
 }
 
 *::-moz-selection {
-  background: rgb(174, 132, 132);
-  color: white;
-  text-shadow: none;
-}
-
-::-moz-selection {
-  /* background: black; */
-  background: rgb(174, 132, 132);
-  color: white;
-  text-shadow: none;
-}
-
-::selection {
-  background: rgb(174, 132, 132);
-  /* background: black; */
+  background: rgb(60, 147, 141);
   color: white;
   text-shadow: none;
 }
@@ -1577,6 +1563,8 @@ a.meanmenu-reveal {
   position: relative;
   top: 100px;
   z-index: 4;
+  top: 0px;
+  background-color: #fff5f5;
 }
 @media only screen and (max-width: 1200px) {
   .subscribe__section {
@@ -2754,7 +2742,7 @@ a.meanmenu-reveal {
 }
 
 .theme__main__banner .banner__main__title {
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 700;
   /* line-height: 94px; */
   position: relative;
@@ -8897,6 +8885,9 @@ p {
 .full_stack_section .live img{
   width: 10%;
 }
+.full_stack_section marquee img{
+  width: 35%;
+}
 .full_stack_section .live .certificate{
   background-color: #e7dcfc;
   display: flex;
@@ -8927,6 +8918,7 @@ p {
   flex-basis: 14.28%;
   padding: 10px;
 }
+
 .technology_section .course img{
   border-radius: 50%;
 }
@@ -9017,8 +9009,8 @@ p {
   max-height: 100%;
 }
 .footer-area form{
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 .footer-area form input{
   border: 1px solid gray;
@@ -9037,6 +9029,63 @@ p {
   text-transform: capitalize;
   border: none;
 }
+.theme-main-menu .logo-area img{
+  width: 80%;
+}
+.theme-main-menu .main-menu ul li a {
+  margin: 0 20px 0 0;
+}
+/*typing text*/
+.banner__main__title{
+  padding: 0.5rem;
+  letter-spacing: 0.1rem;
+  overflow: hidden;
+}
+.banner__main__title span.typed-text {
+  color: #dd7732;
+}
+.banner__main__title span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.banner__main__title span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+.modal-body button{
+  background: #357ffe;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 3px;
+  border: none;
+}
+.service__section .section__sub__title::before {
+  position: absolute;
+  content: '';
+  width: 110%;
+  height: 25px;
+  border-top: 1px solid #E6E6E6;
+  border-left: 1px solid #E6E6E6;
+  top: -10px;
+  left: -6%;
+}
+.service__section .section__sub__title {
+  position: relative;
+  color: #fc3c59;
+  display: inline;
+}
+.service__section .service__type .para{
+  text-align: justify;
+}
 @media(max-width:575px){
   .pricing_section .ht_btn{
     padding: 15px 14px;
@@ -9047,6 +9096,7 @@ p {
   .full_stack_section .my-it{
     text-align: justify;
   }
+ 
 }
 @media(max-width:992px){
   .technology_section .course li{
