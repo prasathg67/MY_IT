@@ -43,6 +43,7 @@
 	<link rel="stylesheet" href="assets/css/aos.css">
 	<link rel="stylesheet" href="assets/css/spacing.css">
 	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -95,35 +96,6 @@
 					</a>
 				</div>
 				<div class="mobile-menu"></div>
-				<!-- <div class="offset-widget mb-40">
-					<div class="info-widget">
-						<h4 class="offset-title mb-20">About Us</h4>
-						<p class="mb-30">
-							But I must explain to you how all this mistaken idea of denouncing pleasure and
-							praising pain was born and will give you a complete account of the system and
-							expound the actual teachings of the great explore
-						</p>
-					</div>
-				</div> -->
-				<!-- <div class="offset-widget mb-30 pr-10">
-					<div class="info-widget info-widget2">
-						<h4 class="offset-title mb-20">Contact Info</h4>
-						<p>
-							<i class="fal fa-address-book"></i>
-							23/A, Miranda City Likaoli Prikano, Dope</p>
-						<p>
-							<i class="fal fa-phone"></i>
-							+0989 7876 9865 9
-						</p>
-						<p>
-							<i class="fal fa-envelope-open"></i>
-							info@example.com
-						</p>
-					</div>
-				</div> -->
-				<!-- <div class="login-btn text-center">
-					<a class="ht_btn w-100" href="login.html">Login</a>
-				</div> -->
 			</div>
 			<!-- offset-sidebar end -->
 
@@ -163,11 +135,11 @@
 								<div class="d-none d-xxl-inline-block">
 									<div class="contact__info d-flex align-items-center">
 										<div class="icon">
-											<img src="assets/img/icon/header__icon__01.svg" alt="" class="">
+											<img src="assets/img/header__icon__01.svg" alt="" class="">
 										</div>
 										<div class="info">
 											<p>Call Now !</p>
-											<a href="tel:9488492325">91 94884 92325</a>											
+											<a href="tel:9442369773">91 94423 69773</a>											
 										</div>
 									</div>
 								</div>
@@ -179,7 +151,7 @@
 								
 								<div class="hamburger-menu d-xl-none">
 									<a class="round-menu" href="javascript:void(0);">
-										<i class="far fa-bars"></i>
+										<i class="fa-solid fa-bars"></i>
 									</a>
 								</div>
 							</div>
@@ -205,16 +177,16 @@
 					<div class="modal-body">
 						<form action="" class="text-center" autocomplete="off">
 							<div>
-								<input type="text" class="py-2 mb-2" name="name" placeholder="Name">
-								<input type="email" class="py-2 mb-2" name="email" placeholder="Email">
+								<i class="fa-solid fa-user"></i><input type="text" class="py-2 mb-2" name="name" placeholder="Name"><br>
+								<i class="fa-solid fa-envelope"></i><input type="email" class="py-2 mb-2" name="email" placeholder="Email">
 							</div>
 							<div>
-								<input type="text" class="py-2 mb-2" name="phone" placeholder="Phone">
-								<input type="text" class="py-2 mb-2" name="city" placeholder="City">
+								<i class="fa-solid fa-phone"></i><input type="text" class="py-2 mb-2" name="phone" placeholder="Phone"><br>
+								<i class="fa-solid fa-city"></i><input type="text" class="py-2 mb-2" name="city" placeholder="City">
 							</div>									
 							<div>
-								<input type="text" class="py-2 mb-2" name="state" placeholder="State">
-								<input type="text" list="courses" class="py-2 mb-2" name="course" placeholder="Course">
+								<i class="fa-brands fa-usps"></i><input type="text" class="py-2 mb-2" name="state" placeholder="State"><br>
+								<i class="fa-brands fa-discourse"></i><input type="text" list="courses" class="py-2 mb-2" name="course" placeholder="Course">
 								<datalist id="courses">
 									<option value="Front-End Development">
 									<option value="Back-End Development">
@@ -227,6 +199,45 @@
 				</div>
 			</div>
 		</div>
+		<!-- free web design course -->
+		
+		<section class="popup_form_section">
+			<form action="" class="mt-3" autocomplete="off">
+				<div class="p-md-3 p-2 formbg position-relative">
+					<span class=" me-4 text-end" id="close"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+					<h2 class="free mt-md-0 mt-3">Free Web Design Course </h2>
+					<div class="mb-md-3 mb-2">
+						<label for="name">Name</label><br>
+						<input type="text" class="name" name="name" id="name">
+					</div>				
+					<div class="d-md-flex mb-md-3">
+						<div class="me-md-2">
+							<label for="email">Email</label><br>
+							<input type="email" class="full_width mb-md-0 mb-2" name="email" id="email">
+						</div>
+						<div>
+							<label for="phone">Phone</label><br>
+							<input type="text"  class="full_width mb-md-0 mb-2" name="phone" id="phone">	
+						</div>
+					</div>
+					<div class="d-md-flex mb-md-3">
+						<div class="me-md-2">
+							<label for="datestart">Date Start</label><br>
+							<input type="text"  class="full_width mb-md-0 mb-2" class="text-center" name="datestart" id="datestart" placeholder="13-05-2024" disabled>
+						</div>
+						<div>
+							<label for="dateend"></label>Date End<br>
+							<input type="text" class="full_width mb-md-0 mb-2" class="text-center" name="dateend" id="dateend" placeholder="24-05-2024" disabled>
+						</div>				
+					</div>
+					<div class="mb-3">
+						<label for="time">Time</label><br>
+						<input type="text" class="time" name="time" id="time" placeholder="5.30PM - 6.30PM" disabled>
+					</div>					
+					<button type="submit" class="text-center ht_btn">Submit</button>
+				</div>
+			</form>
+		</section>
 		<main>
 			<!-- theme__main__banner start -->
 			<section class="theme__main__banner py-lg-2 py-4 position-relative">
@@ -249,49 +260,18 @@
 															</div>
 															<p class="banner__description mb-25">Build professional work-like projects to master React, Node JS, MongoDB, Javascript, and more to land a top career as a full-stack developer with guaranteed placement.</p>
 														</div>
-													</div>
-													<!-- <div class="banner__button d-lg-flex align-items-center mb-45">
-														<a href="contact.html" class="ht_btn mb-md-30">
-															<span>Explore More</span>
-														</a>
-														<a href="https://www.youtube.com/watch?v=lTxn2BuqyzU" class="popup-video">
-															<img src="assets/img/icon/play__01.png" alt="icon">
-														</a>
-													</div> -->
-													<!-- <div class="user__review d-lg-flex align-items-center">
-														<img src="assets/img/hero/hero__one__03.jpg" alt="" class="rounded-circle">
-														<img src="assets/img/hero/hero__one__04.jpg" alt="" class="rounded-circle">
-														<img src="assets/img/hero/hero__one__05.jpg" alt="" class="rounded-circle">
-														<div class="review__text">
-															<h4 class="mb-20"><span class="counter">5.5</span>k+</h4>
-															<h5>To customer reviews</h5>
-														</div>
-													</div> -->
+													</div>										
 												</div>
 											</div>
 											<div class="col-lg-6">
 												<div class="hero__img position-relative">
 													<img src="assets/img/steve5.png" alt="">
-													<!-- <div class="shapes developer__list d-lg-flex align-items-center">
-														<div class="employer__list">
-															<h4><span class="counter">300</span>+</h4>
-															<h5>Empowered Projects</h5>
-														</div>
-														<div class="worker__list">
-															<h4><span class="counter">30</span>+</h4>
-															<h5>In-house Developers</h5>
-														</div>
-													</div> -->
 												</div>
 											</div>
 										</div>
 									</div>
-									<!-- <img src="assets/img/100+student.png" alt="" class="shapes shape__01"> -->
-									<img src="assets/img/shape/home__02.svg" alt="" class="shapes shape__02">
-									<img src="assets/img/shape/home__03.svg" alt="" class="shapes shape__03">
-									<!-- <img src="assets/img/logo/hero__logo__01.png" alt="" class="shapes shape__04"> -->
-									<!-- <img src="assets/img/hero/hero__one__bg__02.png" alt="" class="shapes shape__05"> -->
-									<!-- <img src="assets/img/hero/hero__one__02.png" alt="" class="shapes shape__06"> -->
+									<img src="assets/img/home__02.svg" alt="" class="shapes shape__02">
+									<img src="assets/img/home__03.svg" alt="" class="shapes shape__03">
 								</div>
 							</div>
 						</div>
@@ -317,17 +297,9 @@
 							<p class="my-it">MY-IT Full Stack Developer Course is a 100% live classroom and online program developed to learn job ready programming skills from industry experts. This master full stack developer course in pondy to make you proficient in back-end and front-end web technologies.</p>
 							<div class="buttons py-md-4 py-3">
 								<a href="" class="ht_btn m-sm-0 mb-3" data-bs-toggle="modal" data-bs-target="#myModal"><span>Enquire Now</span></a>
-								<a href="tel:9488492325" class="ht_btn m-sm-0 mb-3"><span>Call Now : +91 94884 92325</span></a>
+								<a href="tel:9442369773" class="ht_btn m-sm-0 mb-3"><span>Call Now : +91 94423 69773</span></a>
 							</div>
 							<p>Top Companies That Hire Full Stack Developers</p>
-							<!-- <ul class="companies">
-								<li class="my-2"><img src="./assets/img/tcs.png" alt=""></li>
-								<li class="my-2"><img src="./assets/img/hcl.png" alt=""></li>
-								<li class="my-2"><img src="./assets/img/mahindra.png" alt=""></li>
-								<li class="my-2"><img src="./assets/img/meesho.png" alt=""></li>
-								<li class="my-2"><img src="./assets/img/byjus.png" alt=""></li>
-								<li class="my-2"><img src="./assets/img/amazon.png" alt=""></li>
-							</ul> -->
 							<marquee behavior="" direction="right">
 								<img src="./assets/img/tcs.png" alt="">
 								<img src="./assets/img/hcl.png" alt="">
@@ -335,8 +307,7 @@
 								<img src="./assets/img/meesho.png" alt="">
 								<img src="./assets/img/byjus.png" alt="">
 								<img src="./assets/img/amazon.png" alt="">
-							</marquee>
-							
+							</marquee>							
 						</div>
 					</div>					
 				</div>
@@ -345,9 +316,6 @@
 			<section class="join_section">
 				<div class="container py-lg-5 py-3" data-aos="fade-up">
 					<div class="row">
-						<!-- <div class="col-lg-3 text-center">
-							<h2 class="text-white">JOIN NOW</h2>
-						</div> -->
 						<div class="col-lg-8 text-center">
 							<p class="text-white m-lg-0 mb-3 apply">Apply for Full Stack Web Developer Program. Learn , Practice and Boost your credibility and advance your full stack career skills.</p>
 						</div>
@@ -387,10 +355,7 @@
 						<div class="offset-xl-1 col-xl-5">
 							<div class="choose__img__wrapper position-relative mb-30">
 								<img class="choose__main__1" src="assets/img/steverb.png" alt="about">
-								<!-- <img class="choose__main__2" src="assets/img/full-stack.jpg" alt="about"> -->
-								<!-- <img class="choose__main__3" src="assets/img/chose/choose__03.png" alt="about"> -->
-								<!-- <img class="choose__main__4" src="assets/img/chose/choose__04.png" alt="about"> -->
-								<img class="choose__main__5" src="assets/img/chose/choose__05.png" alt="about">
+								<img class="choose__main__5" src="assets/img/choose__05.png" alt="about">
 							</div>
 						</div>
 						<div class="col-xl-6 ps-xl-0">
@@ -524,95 +489,6 @@
 				</div>
 			</section>
 			<!-- offer__section end -->
-
-			<!-- choose__section start-->
-			<!-- <section class="choose__section position-relative pb-60  pb-lg-40">
-				<div class="container-fluid">
-					<div class="row d-flex align-items-center" data-aos="fade-up">
-						<div class="offset-xl-1 col-xl-5">
-							<div class="choose__img__wrapper position-relative mb-30">
-								<img class="choose__main__1" src="assets/img/chose/choose__01.png" alt="about">
-								<img class="choose__main__2" src="assets/img/chose/choose__02.png" alt="about">
-								<img class="choose__main__3" src="assets/img/chose/choose__03.png" alt="about">
-								<img class="choose__main__4" src="assets/img/chose/choose__04.png" alt="about">
-								<img class="choose__main__5" src="assets/img/chose/choose__05.png" alt="about">
-							</div>
-						</div>
-						<div class="col-xl-6 ps-xl-0">
-							<div class="container">
-								<div class="row">
-									<div class="col-xxl-8">
-										<div class="choose__content__wrapper mb-80">
-											<div class="section__title">
-												<div class="text-start">
-													<h5 class="section__sub__title">ABOUT TECH AGENCY</h5>
-													<h2 class="section__title__main mb-30">Your Source for High Quality IT Solutions</h2>
-													<p class="section__description mb-30 opacity-8">There are many variations of passages of Lorem Ipsum Donor available, but the majority have suffered alteration.</p>
-												</div>
-											</div>
-											<ul class="mb-30">
-												<li>
-													<div class="choose__type mb-25 d-flex align-items-center">
-														<div class="icon">
-															<img src="assets/img/icon/choose__icon__01.svg" alt="icon">
-														</div>
-														<div class="choose__type__text">
-															<p class="">Connection to wearable technology</p>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="choose__type mb-25 d-flex align-items-center">
-														<div class="icon">
-															<img src="assets/img/icon/choose__icon__01.svg" alt="icon">
-														</div>
-														<div class="choose__type__text">
-															<p class=""> Solutions for voice-enabled technology</p>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="choose__type mb-25 d-flex align-items-center">
-														<div class="icon">
-															<img src="assets/img/icon/choose__icon__01.svg" alt="icon">
-														</div>
-														<div class="choose__type__text">
-															<p class="">Search engine optimization (SEO)</p>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="choose__type mb-25 mt-50">
-														<h5 class="mb-20">Our mission</h5>
-														<p class="description__one">Lorem ipsum is simply free text dolor sit amet tur notted adipisi
-															cing elit sed do eiusmod tempor ipsum</p>
-													</div>
-												</li>
-												<li>
-													<div class="choose__type mb-25">
-														<h5 class="mb-20">Our vision</h5>
-														<p class="description__one">Lorem ipsum is simply free text dolor sit amet tur notted adipisi
-															cing elit sed do eiusmod tempor ipsum</p>
-													</div>
-												</li>
-											</ul>
-											<div class=" text-start">
-												<div class="choose__btn position-relative">
-													<a href="contact.html" class="ht_btn">
-														<span>Explore More</span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<img src="assets/img/chose/choose__06.png" alt="" class="shapes choose__06">
-			</section> -->
-			<!-- choose__section end -->
 			<!-- Technology-covers -->
 			<section class="technology_section py-lg-5 py-3">
 				<div class="container" data-aos="fade-up">
@@ -640,149 +516,9 @@
 						<li><img src="./assets/img/node.png" alt=""></li>
 						<li><img src="./assets/img/php.jpg" alt=""></li>
 					</ul>
-				</div>
-				<div class="container">
-					
+				</div>				
 				</div>
 			</section>
-
-			<!-- project__section start -->
-			<!-- <section class="project__section position-relative pb-100 pb-lg-40">
-				<div class="container" data-aos="fade-up">
-					<div class="section__title mb-60">
-						<div class="text-start text-lg-center">
-							<h5 class="section__sub__title">OUR COMPLETED PROJECT</h5>
-							<div class="row">
-								<div class="col-xl-7 col-lg-8 m-auto">
-									<h2 class="section__title__main">Our Recently Completed
-										Projects List</h2>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="project-container">
-					<div class="swiper project__slider__one pb-100">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<div class="project__wrapper mb-30">
-									<div class="project__thumb mb-20 position-relative">
-										<img class="w-100" src="assets/img/project/project__01.png" alt="project">
-										<div class="project__icon__wrapper d-flex align-items-center justify-content-between">
-											<div class="project__content">
-												<h4 class="project__title"><a href="project-details.html">Fast scaling</a></h4>
-												<p class="project__designation opacity-8 mb-2">Talent search for AI product development</p>
-											</div>
-											<div class="project__icon text-center">
-												<a href="project-details.html" class="icon">
-													<span>Details</span>
-													<i class="bi bi-arrow-right-short"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="project__wrapper mb-30">
-									<div class="project__thumb mb-20 position-relative">
-										<img class="w-100" src="assets/img/project/project__02.png" alt="project">
-										<div class="project__icon__wrapper d-flex align-items-center justify-content-between">
-											<div class="project__content">
-												<h4 class="project__title"><a href="project-details.html">Strategic Roadmapping</a></h4>
-												<p class="project__designation opacity-8 mb-2">Talent search for AI product development</p>
-											</div>
-											<div class="project__icon text-center">
-												<a href="project-details.html" class="icon">
-													<span>Details</span>
-													<i class="bi bi-arrow-right-short"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="project__wrapper mb-30">
-									<div class="project__thumb mb-20 position-relative">
-										<img class="w-100" src="assets/img/project/project__03.png" alt="project">
-										<div class="project__icon__wrapper d-flex align-items-center justify-content-between">
-											<div class="project__content">
-												<h4 class="project__title"><a href="project-details.html">Artificial Intelligence</a></h4>
-												<p class="project__designation opacity-8 mb-2">Talent search for AI product development</p>
-											</div>
-											<div class="project__icon text-center">
-												<a href="project-details.html" class="icon">
-													<span>Details</span>
-													<i class="bi bi-arrow-right-short"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="project__wrapper mb-30">
-									<div class="project__thumb mb-20 position-relative">
-										<img class="w-100" src="assets/img/project/project__01.png" alt="project">
-										<div class="project__icon__wrapper d-flex align-items-center justify-content-between">
-											<div class="project__content">
-												<h4 class="project__title"><a href="project-details.html">Fast scaling</a></h4>
-												<p class="project__designation opacity-8 mb-2">Talent search for AI product development</p>
-											</div>
-											<div class="project__icon text-center">
-												<a href="project-details.html" class="icon">
-													<span>Details</span>
-													<i class="bi bi-arrow-right-short"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="project__wrapper mb-30">
-									<div class="project__thumb mb-20 position-relative">
-										<img class="w-100" src="assets/img/project/project__02.png" alt="project">
-										<div class="project__icon__wrapper d-flex align-items-center justify-content-between">
-											<div class="project__content">
-												<h4 class="project__title"><a href="project-details.html">Strategic Roadmapping</a></h4>
-												<p class="project__designation opacity-8 mb-2">Talent search for AI product development</p>
-											</div>
-											<div class="project__icon text-center">
-												<a href="project-details.html" class="icon">
-													<span>Details</span>
-													<i class="bi bi-arrow-right-short"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="project__wrapper mb-30">
-									<div class="project__thumb mb-20 position-relative">
-										<img class="w-100" src="assets/img/project/project__03.png" alt="project">
-										<div class="project__icon__wrapper d-flex align-items-center justify-content-between">
-											<div class="project__content">
-												<h4 class="project__title"><a href="project-details.html">Artificial Intelligence</a></h4>
-												<p class="project__designation opacity-8 mb-2">Talent search for AI product development</p>
-											</div>
-											<div class="project__icon text-center">
-												<a href="project-details.html" class="icon">
-													<span>Details</span>
-													<i class="bi bi-arrow-right-short"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-pagination">
-						</div>
-					</div>
-				</div> -->
 				<section class="service__section position-relative">
 					<div class="container">
 						<div class="row d-flex py-lg-5 py-4">
@@ -796,7 +532,7 @@
 								<div class="service__content__wrapper position-relative">
 									<div class="icon__rapper">
 										<div class="icon position-relative">
-											<img src="assets/img/icon/project__01.png" alt="icon" class="">
+											<img src="assets/img/project__01.png" alt="icon" class="">
 										</div>
 									</div>
 									<div class="service__type mt-lg-5 mt-3 d-flex">										
@@ -811,7 +547,7 @@
 								<div class="service__content__wrapper position-relative">
 									<div class="icon__rapper mt-lg-0 mt-3">
 										<div class="icon icon__two position-relative">
-											<img src="assets/img/icon/project__02.png" alt="icon" class="">
+											<img src="assets/img/project__02.png" alt="icon" class="">
 										</div>
 									</div>
 									<div class="service__type mt-lg-5 mt-3 d-flex">										
@@ -826,7 +562,7 @@
 								<div class="service__content__wrapper position-relative">
 									<div class="icon__rapper mt-lg-0 mt-3">
 										<div class="icon icon__three position-relative">
-											<img src="assets/img/icon/project__03.png" alt="icon" class="">
+											<img src="assets/img/project__03.png" alt="icon" class="">
 										</div>
 									</div>
 									<div class="service__type mt-lg-5 mt-3 d-flex">
@@ -874,9 +610,6 @@
 											</div>
 										</div>
 										<div class="testimonial__content position-relative">
-											<div class="quate__icon bg-dark mb-30">
-												<img src="assets/img/icon/testimonial__icon__01.png" alt="" class="testimonial__icon__01">
-											</div>
 											<p class="testimonial__quotation">I am glad to share my experience in MY IT. Recently I did my Full Stack Development .The Trainers was so friendly and was so good at interacting with all the students and ensure the questions were answered. Now I am Proficient in both Front and Back-End Technp+ologies</p>
 										</div>
 									</div>
@@ -895,9 +628,6 @@
 											</div>
 										</div>
 										<div class="testimonial__content position-relative">
-											<div class="quate__icon bg-dark mb-30">
-												<img src="assets/img/icon/testimonial__icon__01.png" alt="" class="testimonial__icon__01">
-											</div>
 											<p class="testimonial__quotation">I'm Bcom graduate, I was afraid about the coding before joining MY IT Career, But now I can handle Fullstack projects, They trained me from the basics, Also they allow me to practice for the whole day which I didn't see this from anyother institutes</p>
 										</div>
 									</div>
@@ -916,9 +646,6 @@
 											</div>
 										</div>
 										<div class="testimonial__content position-relative">
-											<div class="quate__icon bg-dark mb-30">
-												<img src="assets/img/icon/testimonial__icon__01.png" alt="" class="testimonial__icon__01">
-											</div>
 											<p class="testimonial__quotation">Institude offers comprehensive courses in React Native development, covering essential topics with practical hands-on exercises.The instructors at Institude are highly skilled and provide excellent support throughout the learning process, ensuring students grasp complex concepts effectively.	</p>
 										</div>
 									</div>
@@ -937,9 +664,6 @@
 											</div>
 										</div>
 										<div class="testimonial__content position-relative">
-											<div class="quate__icon bg-dark mb-30">
-												<img src="assets/img/icon/testimonial__icon__01.png" alt="" class="testimonial__icon__01">
-											</div>
 											<p class="testimonial__quotation">I recently completed the React Native developer course at MY IT Career, and I must say it was an exceptional experience. The course curriculum was well-structured and covered all the essential topics needed to excel in React Native development.</p>
 										</div>
 									</div>
@@ -958,9 +682,6 @@
 											</div>
 										</div>
 										<div class="testimonial__content position-relative">
-											<div class="quate__icon bg-dark mb-30">
-												<img src="assets/img/icon/testimonial__icon__01.png" alt="" class="testimonial__icon__01">
-											</div>
 											<p class="testimonial__quotation">Attending the React JS developer course at MY IT Career was a game-changer for me. The instructors were top-notch, providing clear explanations and practical examples to grasp complex concepts easily. The course structure was well-designed, covering everything from the basics to advanced topics in React JS development</p>
 										</div>
 									</div>
@@ -976,30 +697,6 @@
 				<img src="assets/img/testimonial/testimonial__bg__02.png" alt="" class="shapes testimonial__bg__02">
 			</div>
 			<!-- testimonial__section end-->
-
-			<!-- subscribe__section start-->
-			<!-- <section class="feature__section position-relative">
-				<div class="container" data-aos="fade-up">
-					<div class="feature__rapper">
-						<div class="text-start text-lg-center pt-100 pt-lg-30 pb-lg-30">
-							<div class="row">
-								<div class="col-xl-8 col-lg-9 m-auto">
-									<h2 class="section__title__main">We Offer IT Support</h2>
-									<p class="section__description mb-30 opacity-8">Duis aute irure dolor in reprehenderit
-										in voluptate velit esse cillum dolore eu fugiat. Excepteur sint occaecat 
-										cupid atat non proident, sunt in culpa </p>
-								  <a href="contact.html" class="ht_btn">
-									  <span>IT Solution</span>
-								  </a>
-								</div>
-							</div>
-						</div>
-					</div>	
-				</div>
-				<img src="assets/img/feature/feature__01.png" alt="" class="shapes feature__01">
-			</section> -->
-			<!-- subscribe__section end -->
-
 			<!-- subscribe__section start-->
 			<section class="subscribe__section py-lg-5 py-3">
 				<div class="container" data-aos="fade-up">
@@ -1012,7 +709,7 @@
 										<div class="review__text">
 											<h5>Need Consultation</h5>
 											<p class="">Open a chat or give us call at</p>
-											<a href="tel:9488492325">91 94884 92325</a>
+											<a href="tel:9442369773">91 94423 69773</a>
 										</div>
 									</div>
 								</div>
@@ -1032,6 +729,12 @@
 			</section>
 			<!-- subscribe__section end -->
 		</main>
+		<!-- whatsapp -->
+		<div>
+			<a href="https://api.whatsapp.com/send?phone=8189891619	&text=Hello Looking For Help?" class="float" target="_blank">
+				<i class="fa-brands fa-whatsapp"></i>
+			</a>
+		</div>
 		<!--footer-area start-->
 		<footer class="footer-area">
 			<div class="footer__bg__one">
@@ -1044,15 +747,15 @@
 							<div class="col-md-6 ms-auto">
 								<h4 class="widget__title mb-30 mt-20">General Enquires</h4>
 								<form action="" class="text-center" autocomplete="off">
-									<div>
+									<div class="mb-2">
 										<input type="text" class="py-2 mb-2" name="name" placeholder="Name">
 										<input type="email" class="py-2 mb-2" name="email" placeholder="Email">
 									</div>
-									<div>
+									<div class="mb-2">
 										<input type="text" class="py-2 mb-2" name="phone" placeholder="Phone">
 										<input type="text" class="py-2 mb-2" name="city" placeholder="City">
 									</div>									
-									<div>
+									<div class="">
 										<input type="text" class="py-2 mb-2" name="state" placeholder="State">
 										<input type="text" list="courses" class="py-2 mb-2" name="course" placeholder="Course">
 										<datalist id="courses">
@@ -1060,7 +763,7 @@
 											<option value="Back-End Development">
 											<option value="Full Stack Development">
 										</datalist><br>
-										<button type="submit" class="ht_btn text-center">SUBMIT</button>
+										<button type="submit" class="ht_btn text-center mt-2">SUBMIT</button>
 									</div>									
 								</form>									
 							</div>				
@@ -1070,7 +773,7 @@
 									<div class="location">
 										<!-- <img src="assets/img/icon/location__01.png" alt="" class=""> -->
 										<p class="mb-3"><i class="fa fa-map-marker pe-2" aria-hidden="true"></i> No 36, Natesan Nagar , Pondicherry, 605005</p>
-										<p class="mb-3"><i class="fa fa-phone pe-2" aria-hidden="true"></i><a href="tel:9488492325">91 94884 92325</a></p>
+										<p class="mb-3"><i class="fa fa-phone pe-2" aria-hidden="true"></i><a href="tel:9442369773">91 94423 69773</a></p>
 										<p class=""><i class="fa fa-envelope pe-2" aria-hidden="true"></i><a href="mailto:myitcarrier01@gmail.com">myitcarrier01@gmail.com</a></p>
 
 									</div>
@@ -1120,8 +823,6 @@
 			</div>
 		</footer>
 		<!--footer-area end-->
-
-
 	</div>
 	<!-- main-page-wrapper end -->
 
@@ -1144,9 +845,6 @@
 	<script src="assets/js/jquery-ui.js"></script>
 	<script src="assets/js/jquery.scrollUp.min.js"></script>
 	<script src="assets/js/plugins.js"></script>
-	<!-- jquery file -->
-	<!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
-
 	<!--Custom JS here -->
 	<script src="assets/js/main.js"></script>
 	<script>
@@ -1209,8 +907,22 @@
 			}
 		}
 	</script>
-
-
+	<!-- popup form scrip -->
+	<!-- <script>
+		window.addEventListener("load",function(){
+			setTimeout(
+				function Open(event){
+					document.querySelector(".popup_form_section").style.
+					display="block";
+				},
+				2000
+			)
+		});
+		document.querySelector("#close").addEventListener
+		("click",function(){
+			document.querySelector(".popup_form_section").style.display="none";
+		});
+	</script> -->
 </body>
 
 </html>

@@ -244,12 +244,6 @@ label {
   color: #01050c;
 }
 
-*::-moz-selection {
-  background: rgb(60, 147, 141);
-  color: white;
-  text-shadow: none;
-}
-
 /*--
     - Input Placeholder
 -----------------------------------------*/
@@ -401,14 +395,15 @@ label {
 }
 #scrollUp {
   background: #fc3c59;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   position: absolute;
-  right: 20px;
-  bottom: 40px;
+  right: 40px;
+  bottom: 100px;
   border-radius: 50%;
   line-height: 40px;
   text-align: center;
+  align-content: center;
 }
 #scrollUp i {
   color: white;
@@ -9015,6 +9010,7 @@ p {
 .footer-area form input{
   border: 1px solid gray;
   border-radius: 5px;
+  text-align: center;
 }
 .footer-area form input::placeholder{
   font-size: 15px;
@@ -9068,6 +9064,12 @@ p {
   border-radius: 3px;
   border: none;
 }
+.modal .modal-body input{
+  border: none;
+  border-bottom: 2px solid black;
+  padding-left: 10px;
+  text-align: center;
+}
 .service__section .section__sub__title::before {
   position: absolute;
   content: '';
@@ -9086,6 +9088,87 @@ p {
 .service__section .service__type .para{
   text-align: justify;
 }
+.popup_form_section{
+  display: none;
+  background-color: #c5c5c5;
+  min-height: 100vh;
+  position: absolute;
+  z-index: 9999;
+  right: 0px;
+  left: 0px;
+  margin: auto;
+}
+.popup_form_section .free{
+  background: linear-gradient(to right, #357ffe, #BD081C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+.popup_form_section input{
+  border: 2px solid #c5c5c5;
+  border-radius: 30px;
+  padding: 5px 0px;
+  text-align: center;
+}
+.popup_form_section .ht_btn{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background: #357ffe;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 3px;
+  border: none;
+}
+.popup_form_section .name,.time{
+  width: 100%;
+}
+.popup_form_section #close{
+  color: #BD081C;
+  cursor: pointer;
+  position: absolute;
+  right: -10px;
+  top: 10px;
+  font-size: 30px;
+}
+.popup_form_section .formbg{
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.popup_form_section form{
+ border-radius: 10px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 500px;
+ padding-top: 95px;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+  align-content: center;
+}
+@media(max-width:767px){
+  .popup_form_section .full_width{
+    width: 100%;
+  }
+  .popup_form_section #close{
+    font-size: 26px;
+    right: -24px;
+    top: -5px;
+  }
+}
 @media(max-width:575px){
   .pricing_section .ht_btn{
     padding: 15px 14px;
@@ -9096,7 +9179,10 @@ p {
   .full_stack_section .my-it{
     text-align: justify;
   }
- 
+  .popup_form_section .free{
+    font-size: 27px;
+  }
+
 }
 @media(max-width:992px){
   .technology_section .course li{
