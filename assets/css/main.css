@@ -259,6 +259,9 @@ label {
   opacity: 1;
 }
 
+body{
+  scroll-behavior: smooth;
+}
 /*--
     - Common Classes
 -----------------------------------------*/
@@ -9003,14 +9006,12 @@ p {
   opacity: 1;
   max-height: 100%;
 }
-.footer-area form{
-  /* display: flex;
-  flex-direction: column; */
+.footer-area form input::placeholder{
+  margin-left: 10px;
 }
 .footer-area form input{
   border: 1px solid gray;
   border-radius: 5px;
-  text-align: center;
 }
 .footer-area form input::placeholder{
   font-size: 15px;
@@ -9068,7 +9069,6 @@ p {
   border: none;
   border-bottom: 2px solid black;
   padding-left: 10px;
-  text-align: center;
 }
 .service__section .section__sub__title::before {
   position: absolute;
