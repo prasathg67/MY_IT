@@ -398,8 +398,8 @@ body{
 }
 #scrollUp {
   background: #fc3c59;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   right: 40px;
   bottom: 100px;
@@ -9146,8 +9146,8 @@ p {
 }
 .float{
 	position:fixed;
-	width:60px;
-	height:60px;
+	width:50px;
+	height:50px;
 	bottom:40px;
 	right:40px;
 	background-color:#25d366;
