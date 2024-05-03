@@ -27,9 +27,8 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#00040B">
 
 	<!-- <link rel="manifest" href="site.webmanifest" /> -->
-	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.jpg">
 	<!-- Place favicon.ico in the root directory -->
-
 	<!-- CSS here -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/fonts/bootstrap-icons/font-css.css">
@@ -163,81 +162,80 @@
 		</header>
 		<!-- theme main manu end-->
 		<!-- modal form -->
-		<div class="modal" id="myModal">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-			
-					<!-- Modal Header -->
-					<div class="modal-header">
-						<h4 class="modal-title text-center">Book Your Seats</h4>
-						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-					</div>
-			
-					<!-- Modal body -->
-					<div class="modal-body">
-						<form action="" class="text-center" autocomplete="off">
-							<div>
-								<i class="fa-solid fa-user"></i><input type="text" class="py-2 mb-2" name="name" placeholder="Name"><br>
-								<i class="fa-solid fa-envelope"></i><input type="email" class="py-2 mb-2" name="email" placeholder="Email">
-							</div>
-							<div>
-								<i class="fa-solid fa-phone"></i><input type="text" class="py-2 mb-2" name="phone" placeholder="Phone"><br>
-								<i class="fa-solid fa-city"></i><input type="text" class="py-2 mb-2" name="city" placeholder="City">
-							</div>									
-							<div>
-								<i class="fa-brands fa-usps"></i><input type="text" class="py-2 mb-2" name="state" placeholder="State"><br>
-								<i class="fa-brands fa-discourse"></i><input type="text" list="courses" class="py-2 mb-2" name="course" placeholder="Course">
-								<datalist id="courses">
-									<option value="Front-End Development">
-									<option value="Back-End Development">
-									<option value="Full Stack Development">
-								</datalist><br>
-								<button type="submit" class="ht_btn text-center">SUBMIT</button>
-							</div>									
-						</form>
+		<section class="modal_form">
+			<div class="modal" id="myModal">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title text-center">Book Your Seats</h4>
+							<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+						</div>
+						<div class="modal-body">
+							<form action="" class="text-center" autocomplete="off">
+								<div>
+									<i class="fa-solid fa-user"></i><input type="text" class="py-2 mb-2" name="name" placeholder="Name"><br>
+									<i class="fa-solid fa-envelope"></i><input type="email" class="py-2 mb-2" name="email" placeholder="Email">
+								</div>
+								<div>
+									<i class="fa-solid fa-phone"></i><input type="text" class="py-2 mb-2" name="phone" placeholder="Phone"><br>
+									<i class="fa-solid fa-city"></i><input type="text" class="py-2 mb-2" name="city" placeholder="City">
+								</div>									
+								<div>
+									<i class="fa-brands fa-usps"></i><input type="text" class="py-2 mb-2" name="state" placeholder="State"><br>
+									<i class="fa-brands fa-discourse"></i><input type="text" list="courses" class="py-2 mb-2" name="course" placeholder="Course">
+									<datalist id="courses">
+										<option value="Front-End Development">
+										<option value="Back-End Development">
+										<option value="Full Stack Development">
+									</datalist><br>
+									<button type="submit" class="ht_btn text-center">SUBMIT</button>
+								</div>									
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- free web design course -->
-		
-		<section class="popup_form_section">
-			<form action="" class="mt-3" autocomplete="off">
-				<div class="p-md-3 p-2 formbg position-relative">
-					<span class=" me-4 text-end" id="close"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
-					<h2 class="free mt-md-0 mt-3">Free Web Design Course </h2>
-					<div class="mb-md-3 mb-2">
-						<label for="name">Name</label><br>
-						<input type="text" class="name" name="name" id="name">
-					</div>				
-					<div class="d-md-flex mb-md-3">
-						<div class="me-md-2">
-							<label for="email">Email</label><br>
-							<input type="email" class="full_width mb-md-0 mb-2" name="email" id="email">
+		</section>		
+		<section class="popup_modal">
+			<div class="modal" id="my_Modal">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Few Seats Available</h4>
+							<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 						</div>
-						<div>
-							<label for="phone">Phone</label><br>
-							<input type="text"  class="full_width mb-md-0 mb-2" name="phone" id="phone">	
+						<div class="modal-body bg-dark">
+							<div class="text-center">
+								<h2 class="pt-3">Free Web Design Course</h2>
+								<p class="text-white"><i class="fa-solid fa-calendar-days pe-2"></i> May 13 To May 24</p>
+								<p class="text-white"><i class="fa-solid fa-clock pe-2"></i> 5:30 To 6:30</p>
+								<p class="text-white"><b> We Provide Course Completion Certificate</b></p>
+								<p class="text-white pt-2">Regisration Fees Just <span class="rupees"><b> ₹99 only</b></span></p>
+							</div>
+							<div class="divider my-2"></div>
+							<form action="" class="text-center">
+								<div class="mb-md-3 mb-2">
+									<label for="name">Name</label><br>
+									<input type="text" class="name" name="name" id="name">
+								</div>				
+								<div class="d-md-flex justify-content-center mb-md-3">
+									<div class="me-md-2">
+										<label for="email">Email</label><br>
+										<input type="email" class="full_width mb-md-0 mb-2" name="email" id="email">
+									</div>
+									<div>
+										<label for="phone">Phone</label><br>
+										<input type="text"  class="full_width mb-md-0 mb-2" name="phone" id="phone">	
+									</div>
+								</div>
+								<button type="submit" class="text-center ht_btn">Register</button>
+							</form>
 						</div>
 					</div>
-					<div class="d-md-flex mb-md-3">
-						<div class="me-md-2">
-							<label for="datestart">Date Start</label><br>
-							<input type="text"  class="full_width mb-md-0 mb-2" class="text-center" name="datestart" id="datestart" placeholder="13-05-2024" disabled>
-						</div>
-						<div>
-							<label for="dateend"></label>Date End<br>
-							<input type="text" class="full_width mb-md-0 mb-2" class="text-center" name="dateend" id="dateend" placeholder="24-05-2024" disabled>
-						</div>				
-					</div>
-					<div class="mb-3">
-						<label for="time">Time</label><br>
-						<input type="text" class="time" name="time" id="time" placeholder="5.30PM - 6.30PM" disabled>
-					</div>					
-					<button type="submit" class="text-center ht_btn">Submit</button>
 				</div>
-			</form>
+			</div>
 		</section>
+	
 		<main>
 			<!-- theme__main__banner start -->
 			<section class="theme__main__banner py-lg-2 py-4 position-relative">
@@ -300,7 +298,7 @@
 								<a href="tel:9442369773" class="ht_btn m-sm-0 mb-3"><span>Call Now : +91 94423 69773</span></a>
 							</div>
 							<p>Top Companies That Hire Full Stack Developers</p>
-							<marquee behavior="" direction="right">
+							<marquee behavior="">
 								<img src="./assets/img/tcs.png" alt="">
 								<img src="./assets/img/hcl.png" alt="">
 								<img src="./assets/img/mahindra.png" alt="">
@@ -404,7 +402,7 @@
 							<h3 class="py-3 text-white text-center">Program Fee <del>INR 50,000</del> INR 25,OOO (incl. Taxes)</h3>
 						</div>
 						<div class="col-lg-6 py-5 text-white ">
-							<h3 class="text-white">Pre-Book Your Seat by Paying just Rs.500</h3>
+							<h3 class="text-white">Pre-Book Your Seat by Paying just Rs.5,000 Only</h3>
 							<ul>
 								<li>EMI Option Available</li>
 								<li>Get maximum flexibility to learn at your own place.</li>
@@ -509,7 +507,7 @@
 						<li><img src="./assets/img/bootstrap.png" alt=""></li>
 						<li><img src="./assets/img/reactjs.png" alt=""></li>
 						<li><img src="./assets/img/express.png" alt=""></li>
-						<li><img src="./assets/img/mango.png" alt=""></li>
+						<li><img src="./assets/img/mongodb.jpg" alt=""></li>
 						<li><img src="./assets/img/git1.png" alt=""></li>
 						<li><img src="./assets/img/git2.png" alt=""></li>
 						<li><img src="./assets/img/mysql.jpg" alt=""></li>
@@ -610,7 +608,7 @@
 											</div>
 										</div>
 										<div class="testimonial__content position-relative">
-											<p class="testimonial__quotation">I am glad to share my experience in MY IT. Recently I did my Full Stack Development .The Trainers was so friendly and was so good at interacting with all the students and ensure the questions were answered. Now I am Proficient in both Front and Back-End Technp+ologies</p>
+											<p class="testimonial__quotation">I am glad to share my experience in MY IT. Recently I did my Full Stack Development .The Trainers was so friendly and was so good at interacting with all the students and ensure the questions were answered. Now I am Proficient in both Front and Back-End Technologies</p>
 										</div>
 									</div>
 								</div>
@@ -779,8 +777,9 @@
 									<div class="devider__line mb-10 mt-30"></div>
 									<h5 class="mb-20 mt-30">Find Us On Social Media</h5>
 									<div class="social_media mt-20">
-										<a href="#"><i class="fab fa-facebook-f"></i></a>
-										<a href="#"><i class="fab fa-instagram"></i></a>
+										<a href="https://www.facebook.com/profile.php?id=61558807744397&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+										<a href="https://www.instagram.com/myit20_24?igsh=YW5zcGtpOGdxbGpu"><i class="fab fa-instagram"></i></a>
+										<a href="https://www.youtube.com/@MYIT-uv7ug"><i class="fa-brands fa-youtube"></i></a>
 									</div>
 								</div>
 							</div>
@@ -796,16 +795,16 @@
 						<div class="devider__line"></div>
 						<div class="copyright__area pt-35">
 							<div class="row">
-								<div class="col-xl-5">
+								<div class="col-lg-5">
 									<div class="text-start">
-										<div class="copyright__text pb-30">
+										<div class="copyright__text text-lg-start text-center pb-30">
 											<p><a class="fw-bold" href="#">MY IT Career</a> ©<span id="copy_rights_year"></span>, All Rights Reserved</p>
 										</div>
 									</div>
 								</div>
-								<div class="col-xl-6 ms-auto">
+								<div class="col-lg-6 ms-auto">
 									<div class="">
-										<ul class="text-start text-xl-end">
+										<ul class="text-lg-start text-center">
 											<li><a href="#">Sitemap</a></li>
 											<li><a href="term_condition.html">Terms And Conditions</a></li>
 											<li><a href="#">Privacy Policy</a></li>
@@ -902,6 +901,13 @@
 				this.nextElementSibling.classList.toggle("show");
 			}
 		}
+	</script>
+	<script>
+		$(window).load(function(){        
+			setTimeout(function() {
+				$('#my_Modal').modal('show');
+			}, 2000); // 2000 milliseconds = 2 seconds
+		});		 
 	</script>
 	<!-- popup form scrip -->
 	<!-- <script>

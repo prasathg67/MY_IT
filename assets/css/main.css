@@ -61,7 +61,7 @@ body {
 }
 
 .main-page-wrapper {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 @media (min-width: 1200px) {
@@ -8800,6 +8800,9 @@ p {
   background-color: #000C40;
   border-radius: 20px;
 }
+.pricing_section .program h3{
+  font-size: 25px !important;
+}
 .pricing_section .pre-btn{
   text-align: center;
 }
@@ -9058,14 +9061,14 @@ p {
   99% { background-color: transparent; }
   100%  { background-color: #ccc; }
 }
-.modal-body button{
+.modal_form .modal-body button{
   background: #357ffe;
   color: white;
   text-transform: capitalize;
   border-radius: 3px;
   border: none;
 }
-.modal .modal-body input{
+.modal_form .modal .modal-body input{
   border: none;
   border-bottom: 2px solid black;
   padding-left: 10px;
@@ -9088,62 +9091,50 @@ p {
 .service__section .service__type .para{
   text-align: justify;
 }
-.popup_form_section{
-  display: none;
-  background-color: #c5c5c5;
-  min-height: 100vh;
-  position: absolute;
-  z-index: 9999;
-  right: 0px;
-  left: 0px;
-  margin: auto;
+.popup_modal .modal-header{
+  background: linear-gradient(to right, #49d2ce, #e2c8cb);
 }
-.popup_form_section .free{
+.popup_modal .modal-body .divider{
+  border: 1px solid #c65c5ca3;
+}
+.popup_modal .modal-body label{
+  color: #5f9aea;
+}
+
+.popup_modal .modal-body .rupees{
+  text-wrap: nowrap;
+  font-size: 35px;
   background: linear-gradient(to right, #357ffe, #BD081C);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
+  background-clip: text;
+  color: transparent;
+  animation: animate 1s linear infinite;
 }
-.popup_form_section input{
-  border: 2px solid #c5c5c5;
-  border-radius: 30px;
-  padding: 5px 0px;
+@keyframes animate{
+  to{background-position-x: 161px;}
+}
+.popup_modal .modal-body .name{
+  width: 100%;
+}
+.popup_modal .modal-body input{
+  border: 2px solid #00badea8;
+  border-radius: 10px;
   text-align: center;
+  padding: 5px 10px;
 }
-.popup_form_section .ht_btn{
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+.popup_modal .modal-body button{
   background: #357ffe;
   color: white;
   text-transform: capitalize;
   border-radius: 3px;
   border: none;
 }
-.popup_form_section .name,.time{
-  width: 100%;
+.popup_modal .modal-body h2{
+  background: linear-gradient(to right, #357ffe, #BD081C);
+  background-clip: text;
+  color: transparent;
 }
-.popup_form_section #close{
-  color: #BD081C;
-  cursor: pointer;
-  position: absolute;
-  right: -10px;
-  top: 10px;
-  font-size: 30px;
-}
-.popup_form_section .formbg{
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-}
-.popup_form_section form{
- border-radius: 10px;
- display: flex;
- justify-content: center;
- align-items: center;
- height: 500px;
- padding-top: 95px;
-}
+.modal_form .modal-content{margin:0px auto;}
+.modal_form .modal-content .modal-header .close{font-size:40px; margin-top: -8px;}
 .float{
 	position:fixed;
 	width:50px;
@@ -9160,13 +9151,8 @@ p {
   align-content: center;
 }
 @media(max-width:767px){
-  .popup_form_section .full_width{
+  .popup_modal .modal-body .full_width{
     width: 100%;
-  }
-  .popup_form_section #close{
-    font-size: 26px;
-    right: -24px;
-    top: -5px;
   }
 }
 @media(max-width:575px){
@@ -9178,9 +9164,6 @@ p {
   }
   .full_stack_section .my-it{
     text-align: justify;
-  }
-  .popup_form_section .free{
-    font-size: 27px;
   }
 
 }

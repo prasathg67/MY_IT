@@ -62,7 +62,7 @@ body {
 }
 
 .main-page-wrapper {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 @media (min-width: 1200px) {
